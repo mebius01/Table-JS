@@ -1,5 +1,5 @@
 # table JS
-Домен: [https://mebius01.github.io/table-JS](https://mebius01.github.io/table-JS)
+Домен: [https://mebius01.github.io/table-JS](https://mebius01.github.io/table-JS)  
 Дан массив пользователей  
 Условия:  
 * В конце таблицы обязательно последняя tr должна содержать total balance всех пользователей из таблицы при этом он должен быть всегда выровнен по правому краю.  
