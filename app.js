@@ -67,7 +67,7 @@ const container = document.querySelector(".container");
 /**Формирует 1 tr
  * Принимает одного юзера, массив с контентом [name, email, ...] и счетчик
  * Вернет tr с счетчиком и контентом в td
-*/
+ */
 function createOneTr(user, arr, counter) {
     const tr = document.createElement("tr");
     const th = document.createElement('th');
@@ -96,7 +96,9 @@ function createTbody(users) {
         arrBalanse.push(user.balance);
         tbody.appendChild(createOneTr(user, arrKeyThead, counter));
     }
-    const totalBalance = arrBalanse.reduce(function(acc, item) {return acc + item}, 0);
+    const totalBalance = arrBalanse.reduce(function (acc, item) {
+        return acc + item
+    }, 0);
     tr.insertAdjacentHTML('afterbegin', `<td class="text-right" colspan="${arrKeyThead.length+1}">Total balance: <b>${totalBalance}</b> </td>`);
     tbody.appendChild(tr);
     return tbody;
@@ -115,7 +117,7 @@ function createThead(objectContent) {
         tr.appendChild(th);
     }
 
-    tr.insertAdjacentHTML('afterbegin',`<th scope="col">#</th>`);
+    tr.insertAdjacentHTML('afterbegin', `<th scope="col">#</th>`);
     thead.appendChild(tr);
 
     return thead
@@ -130,7 +132,7 @@ function renderTable() {
     fragment.appendChild(table);
     container.appendChild(fragment);
 }
-console.log(container);
+
 renderTable()
 // console.log(createThead(thead));
 // createTbody(users)
