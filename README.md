@@ -2,7 +2,7 @@
 
 Рендерит таблицу на основе массива с данными пользователей.
 
-Домен: [https://mebius01.github.io/table-JS](https://mebius01.github.io/table-JS)
+Домен: [https://mebius01.github.io/Table-JS/](https://mebius01.github.io/Table-JS/)
 
 Дан массив пользователей  
 Условия:
